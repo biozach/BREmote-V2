@@ -1,0 +1,6 @@
+*.s#*
+*.b#*
+*.br*
+/Electronics/openfoil
+/Releases
+/Inofficial
