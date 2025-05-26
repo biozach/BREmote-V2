@@ -18,8 +18,6 @@ void startupRadio()
   if(usrConf.radio_preset == 1)
   {
     Serial.print(" Region: EU868");
-    //869.4-869.65MHz, 10%TOA, 500mW
-    //Checked allowed in: EU, Switzerland
                         //          5..12 5..8                                  -9..22             >=1
                         //fc     bw    sf cr                                      pwr              pre tcxo  ldo
     state = radio.begin(869.525, 250.0, 6, 7, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, usrConf.rf_power, 8, 1.8, false);
@@ -27,8 +25,10 @@ void startupRadio()
   else if(usrConf.radio_preset == 2)
   {
     //Reserved for US
-    Serial.println("Error, unsupported HF setting");
-    while(1) blinkErr(3, AP_L_BIND);
+    Serial.print(" Region: US/AU915");
+                        //          5..12 5..8                                  -9..22             >=1
+                        //fc     bw    sf cr                                      pwr              pre tcxo  ldo
+    state = radio.begin(915.0, 250.0, 6, 7, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, usrConf.rf_power, 8, 1.8, false);
   }
   else if (usrConf.radio_preset == 3)
   {

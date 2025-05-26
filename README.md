@@ -70,7 +70,10 @@ Rx:
 
 
 # Changelog:
-### 2024-04-15: [Release V2.1]
+### 2025-05-26:
+Updated Complete.step (spring assy. missing)
+Added RF settings for US/AU(915MHz) in Tx&Rx
+### 2025-05-20: [Release V2.1]
 Initial release
 
 

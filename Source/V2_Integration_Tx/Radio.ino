@@ -27,8 +27,10 @@ void startupRadio()
   else if(usrConf.radio_preset == 2)
   {
     //Reserved for US
-    Serial.println("Error, unsupported HF setting");
-    while(1) scroll4Digits(LET_E, LET_H, LET_F, LET_C, 200);
+    Serial.print(" Region: US/AU915");
+                        //          5..12 5..8                                  -9..22             >=1
+                        //fc     bw    sf cr                                      pwr              pre tcxo  ldo
+    state = radio.begin(915.0, 250.0, 6, 7, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, usrConf.rf_power, 8, 1.8, false);
   }
   else if (usrConf.radio_preset == 3)
   {
