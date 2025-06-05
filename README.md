@@ -15,7 +15,7 @@
 
 ## Links:
 * [Build Video](https://youtu.be/Fw4YdQWvs6I)
-* [SW Setup & Config Video]()
+* [SW Setup & Config Video](https://youtu.be/r6JIZEq3aTU)
 * [Config Tool](https://lbre.de/BREmote/struct.html)
 * [Serial Terminal](https://lbre.de/BREmote/sertest.html)
 * [Expo Tool](https://lbre.de/BREmote/expo.html)
@@ -67,9 +67,43 @@ Rx:
 
 # Connection Examples:
 
+<details>
+<summary>VESC with UART</summary>
 
+![Conn](https://github.com/Luddi96/BREmote-V2/blob/main/img/conn_vesc.PNG)
 
+</details>
+
+<details>
+<summary>ESC with BREmote BEC</summary>
+
+![Conn](https://github.com/Luddi96/BREmote-V2/blob/main/img/conn_esc_bbec.PNG)
+
+</details>
+
+<details>
+<summary>ESC with own BEC</summary>
+
+![Conn](https://github.com/Luddi96/BREmote-V2/blob/main/img/conn_esc_obec.PNG)
+
+</details>
+
+<details>
+<summary>VESC + Servo</summary>
+
+![Conn](https://github.com/Luddi96/BREmote-V2/blob/main/img/conn_vesc_servo.PNG)
+
+</details>
+
+<details>
+<summary>ESC + Servo</summary>
+
+![Conn](https://github.com/Luddi96/BREmote-V2/blob/main/img/conn_esc_servo.PNG)
+
+</details>
 # Changelog:
+### 2025-06-05:
+Updated Readme (Add YT link and conn examples)
 ### 2025-05-26:
 Updated Complete.step (spring assy. missing)
 Added RF settings for US/AU(915MHz) in Tx&Rx
